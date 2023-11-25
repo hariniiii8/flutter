@@ -11,3 +11,6 @@ void main() {
     ),
   );
 }
+
+var values can be reassigned at any time
+  so we need to remove const if its used before that
