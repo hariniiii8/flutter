@@ -23,3 +23,7 @@ void main() {
     ),
   );
 }
+
+
+
+//container does not support const keyword so we should remove it from material app and use it next to center
