@@ -36,3 +36,31 @@ class GradientContainer extends StatelessWidget {
     );
   }
 }
+
+
+we add const MyClass({super.key});
+which means that the stateful widget wants a key from this class which will be sent to the parent class and its key will be given value of key
+  const MyClass({key}):super(key);
+
+
+
+class MyClass extends StatelessWidget 
+{
+  const MyClass({super.key});
+@override 
+Widget build(context){
+  return Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.deepPurple, Colors.white],
+            ),
+          ),
+          child: const Center(
+            child: Text(
+              'Hello flutter',
+              style: TextStyle(color: Colors.pink, fontSize: 50),
+            ),
+          ),
+        );
+}
+}
